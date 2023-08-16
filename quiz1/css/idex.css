@@ -1,0 +1,11 @@
+.center {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+.text{
+    color:blue;
+}

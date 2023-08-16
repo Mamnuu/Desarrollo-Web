@@ -81,3 +81,34 @@ const crearnombrecompleto = (nombre, apellido) => {
  const botonesHtml = document.getElementsByTagName('button');
  console.log(botonesHtml)
  crearnombrecompleto(nombre, apellido)
+
+ // Array: puedo tener array de diferentes tipos de datos
+
+let estudiantes = []
+
+ // Agregar un elemento 
+//  estudiantes.push(5)
+//  estudiantes.push(null)
+estudiantes.push({"nombre":"Juan", id:123})
+estudiantes.push({"nombre":"Maria", id:1234})
+estudiantes.push({"nombre":"Maria", id:12345})
+//  estudiantes.push(()=>{console.log();})
+
+
+estudiantes.forEach((estudiante) => console.log(estudiante.nombre))
+
+for (let i = 0; i < estudiantes.length; i++) {
+    if(estudiantes[i].nombre == "Maria"){
+        console.log(estudiantes[i].id)
+    }
+    
+}
+const marias = estudiantes.filter(x=>x.nombre == "Maria")
+console.log(marias)
+const maria= estudiantes.find(x=>x.nombre == "Maria")
+console.log(maria)
+
+estudiantes = estudiantes.map(x=> {return {...x, edad:null }})
+console.log(estudiantes)
+
+console.log(typeof 5)
