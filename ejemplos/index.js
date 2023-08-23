@@ -112,3 +112,25 @@ estudiantes = estudiantes.map(x=> {return {...x, edad:null }})
 console.log(estudiantes)
 
 console.log(typeof 5)
+
+//JSON (javascript object notation)
+
+function jsonsEnJavascript(){
+    const ciudad= {
+        nombre:"Medellin",
+        poblacion:2.5, 
+        barrios_count:31,
+        calcularCantidadVehiculos(){
+            console.log("total cantidad vehículoes","55M", this.nombre);
+        }
+    }    
+}
+
+
+//Destructuración
+
+const{nombre:nombreCiudad}=ciudad;
+console.log(nombreCiudad);
+ciudad.calcularCantidadVehiculos()
+console.log(ciudad.nombre)
+console.log(ciudad["nombre"])
